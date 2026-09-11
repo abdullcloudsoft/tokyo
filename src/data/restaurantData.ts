@@ -1,0 +1,206 @@
+import { MenuItem, GalleryItem } from '../types';
+import wokNoodlesImg from '../assets/images/tokyo_wok_noodles_1789129846022.jpg';
+
+export const RESTAURANT_INFO = {
+  name: 'Tokyo Pan Asian Cuisine',
+  tagline: 'Authentic Pan-Asian Flavors',
+  subheading: 'Experience the harmony of Japanese, Thai, and Chinese culinary arts.',
+  address: 'Commercial Market Road, Satellite Town, Rawalpindi',
+  city: 'Rawalpindi, Pakistan',
+  phone: '0318 9187390',
+  phoneClean: '03189187390',
+  phoneInternational: '+923189187390',
+  email: 'tokyopanasiancuisine3@gmail.com',
+  whatsappUrl: 'https://wa.me/923189187390?text=Hello%20Tokyo%20Pan%20Asian%20Cuisine%2C%20I%20would%20like%20to%20place%20an%20order%20%2F%20make%20an%20inquiry.',
+  callUrl: 'tel:03189187390',
+  facebookUrl: 'https://www.facebook.com/p/TOKYO-61576789112697/',
+  instagramUrl: 'https://www.instagram.com/tokyopanasian/',
+  googleMapsUrl: 'https://maps.google.com/?q=Commercial+Market+Road+Satellite+Town+Rawalpindi',
+  hours: 'Open Daily: 12:00 PM – 12:00 AM',
+};
+
+export const MENU_CATEGORIES = [
+  'All',
+  'Chinese',
+  'Thai',
+  'Japanese',
+  'Asian Starters',
+  'Rice & Noodles',
+  'Drinks',
+] as const;
+
+export const MENU_ITEMS: MenuItem[] = [
+  // Japanese
+  {
+    id: 'jp-1',
+    name: 'Artisan Sushi & Maki Rolls',
+    category: 'Japanese',
+    description: 'Fresh salmon, avocado, nori, seasoned sushi rice, accompanied with wasabi and pickled ginger.',
+    image: 'https://images.unsplash.com/photo-1579871494447-9811cf80d66c?q=80&w=800&auto=format&fit=crop',
+    popular: true,
+    tags: ['Fresh', 'Chef Special'],
+  },
+  {
+    id: 'jp-2',
+    name: 'Salmon Nigiri & Sashimi Selection',
+    category: 'Japanese',
+    description: 'Hand-sliced sashimi grade salmon served over delicate pressed sushi rice with soy reduction.',
+    image: 'https://images.unsplash.com/photo-1611143669185-af224c5e3252?q=80&w=800&auto=format&fit=crop',
+    popular: false,
+    tags: ['Traditional'],
+  },
+  // Thai
+  {
+    id: 'th-1',
+    name: 'Authentic Thai Green Curry',
+    category: 'Thai',
+    description: 'Simmered in rich coconut cream with Thai basil, lemongrass, galangal, kaffir lime, and crisp vegetables.',
+    image: 'https://images.unsplash.com/photo-1455619452474-d2be8b1e70cd?q=80&w=800&auto=format&fit=crop',
+    popular: true,
+    tags: ['Aromatic', 'Mild Spice'],
+  },
+  {
+    id: 'th-2',
+    name: 'Classic Tom Yum Soup',
+    category: 'Thai',
+    description: 'Fragrant hot and sour lemongrass broth with mushrooms, fresh cilantro, chili, and zesty lime.',
+    image: 'https://images.unsplash.com/photo-1548943487-a2e4e43b4853?q=80&w=800&auto=format&fit=crop',
+    popular: false,
+    tags: ['Spicy & Sour'],
+  },
+  // Chinese
+  {
+    id: 'ch-1',
+    name: 'Szechuan Kung Pao Chicken',
+    category: 'Chinese',
+    description: 'Wok-charred chicken tossed with fiery Sichuan chilies, scallions, sweet peppers, and roasted peanuts.',
+    image: 'https://images.unsplash.com/photo-1525755662778-989d0524087e?q=80&w=800&auto=format&fit=crop',
+    popular: true,
+    tags: ['Wok Classic', 'Szechuan'],
+  },
+  {
+    id: 'ch-2',
+    name: 'Steamed Dim Sum Dumplings',
+    category: 'Chinese',
+    description: 'Hand-pleated delicate translucent dumplings served hot in a bamboo basket with house chili soy dip.',
+    image: 'https://images.unsplash.com/photo-1496116218417-1a781b1c416c?q=80&w=800&auto=format&fit=crop',
+    popular: false,
+    tags: ['Steamed', 'Delicate'],
+  },
+  // Asian Starters
+  {
+    id: 'st-1',
+    name: 'Golden Crisp Spring Rolls',
+    category: 'Asian Starters',
+    description: 'Crispy hand-rolled pastries packed with shredded Asian vegetables, served with sweet chili sauce.',
+    image: 'https://images.unsplash.com/photo-1544025162-d76694265947?q=80&w=800&auto=format&fit=crop',
+    popular: true,
+    tags: ['Crispy Starter'],
+  },
+  {
+    id: 'st-2',
+    name: 'Pan-Seared Japanese Gyoza',
+    category: 'Asian Starters',
+    description: 'Pan-crisped dumplings with a savory seasoned vegetable and protein filling, served with sesame soy vinegar.',
+    image: 'https://images.unsplash.com/photo-1541696432-82c6da8ce7bf?q=80&w=800&auto=format&fit=crop',
+    popular: false,
+    tags: ['Pan-Seared'],
+  },
+  // Rice & Noodles
+  {
+    id: 'rn-1',
+    name: 'Tokyo Wok-Tossed Noodles',
+    category: 'Rice & Noodles',
+    description: 'Masterfully tossed under high wok heat with fresh julienned vegetables, savory glaze, and toasted sesame.',
+    image: wokNoodlesImg,
+    popular: true,
+    tags: ['Chef Signature', '3D Visual'],
+  },
+  {
+    id: 'rn-2',
+    name: 'Classic Asian Wok Fried Rice',
+    category: 'Rice & Noodles',
+    description: 'Fragrant jasmine rice wok-fried with farm eggs, scallions, sweet green peas, and light aromatic soy.',
+    image: 'https://images.unsplash.com/photo-1603133872878-684f208fb84b?q=80&w=800&auto=format&fit=crop',
+    popular: false,
+    tags: ['Wok Fried'],
+  },
+  // Drinks
+  {
+    id: 'dr-1',
+    name: 'Chilled Thai Iced Milk Tea',
+    category: 'Drinks',
+    description: 'Slow-brewed spiced black Ceylon tea layered over sweetened condensed milk and served over crushed ice.',
+    image: 'https://images.unsplash.com/photo-1558857563-b371033873b8?q=80&w=800&auto=format&fit=crop',
+    popular: true,
+    tags: ['Chilled', 'Signature'],
+  },
+  {
+    id: 'dr-2',
+    name: 'Fresh Mint & Citrus Cooler',
+    category: 'Drinks',
+    description: 'Crisp hand-muddled fresh garden mint, cold-pressed lime juice, sparkling soda, and organic cane nectar.',
+    image: 'https://images.unsplash.com/photo-1513558161293-cdaf765ed2fd?q=80&w=800&auto=format&fit=crop',
+    popular: false,
+    tags: ['Refreshing'],
+  },
+];
+
+export const GALLERY_ITEMS: GalleryItem[] = [
+  {
+    id: 'gal-1',
+    title: 'Artisanal Sushi Rolls',
+    category: 'Japanese Cuisine',
+    image: 'https://images.unsplash.com/photo-1579871494447-9811cf80d66c?q=80&w=1000&auto=format&fit=crop',
+    description: 'Handcrafted rolls with fresh avocado, sushi rice, and premium nori.',
+  },
+  {
+    id: 'gal-2',
+    title: 'Signature Wok Noodles',
+    category: 'Rice & Noodles',
+    image: wokNoodlesImg,
+    description: 'High-heat wok noodles with crisp vegetables and savory reduction.',
+  },
+  {
+    id: 'gal-3',
+    title: 'Steamed Bamboo Dim Sum',
+    category: 'Chinese Cuisine',
+    image: 'https://images.unsplash.com/photo-1496116218417-1a781b1c416c?q=80&w=1000&auto=format&fit=crop',
+    description: 'Delicate dumplings hand-folded and steamed to tender perfection.',
+  },
+  {
+    id: 'gal-4',
+    title: 'Aromatic Thai Green Curry',
+    category: 'Thai Cuisine',
+    image: 'https://images.unsplash.com/photo-1455619452474-d2be8b1e70cd?q=80&w=1000&auto=format&fit=crop',
+    description: 'Velvety coconut curry with authentic Thai herbs and fresh chili.',
+  },
+  {
+    id: 'gal-5',
+    title: 'Pan-Crisped Asian Gyoza',
+    category: 'Asian Starters',
+    image: 'https://images.unsplash.com/photo-1541696432-82c6da8ce7bf?q=80&w=1000&auto=format&fit=crop',
+    description: 'Golden-bottomed Japanese potstickers served with sesame soy.',
+  },
+  {
+    id: 'gal-6',
+    title: 'Golden Crispy Spring Rolls',
+    category: 'Asian Starters',
+    image: 'https://images.unsplash.com/photo-1544025162-d76694265947?q=80&w=1000&auto=format&fit=crop',
+    description: 'Crisp vegetable spring rolls with tangy sweet chili dipping sauce.',
+  },
+  {
+    id: 'gal-7',
+    title: 'Wok-Seared Kung Pao Special',
+    category: 'Chinese Cuisine',
+    image: 'https://images.unsplash.com/photo-1525755662778-989d0524087e?q=80&w=1000&auto=format&fit=crop',
+    description: 'Sizzling wok wok toss with roasted peanuts and Sichuan aromatics.',
+  },
+  {
+    id: 'gal-8',
+    title: 'Iced Asian Tea & Coolers',
+    category: 'Beverages',
+    image: 'https://images.unsplash.com/photo-1558857563-b371033873b8?q=80&w=1000&auto=format&fit=crop',
+    description: 'Refreshing artisan beverages brewed fresh daily.',
+  },
+];

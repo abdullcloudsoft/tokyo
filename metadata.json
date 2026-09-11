@@ -1,0 +1,6 @@
+{
+  "name": "Tokyo Pan Asian Cuisine",
+  "description": "Official website of Tokyo Pan Asian Cuisine located on Commercial Market Road, Satellite Town, Rawalpindi. Authentic Pan-Asian dining featuring Chinese, Thai, and Japanese specialties.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
